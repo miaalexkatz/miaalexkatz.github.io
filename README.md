@@ -2,11 +2,12 @@
 
 This is a *Teachablemachine.js* demo that shows how you can drop a “training wizard” on
 top of your web creation with just a few lines of code. For example, you can
-create a game or other experience where  trains their own webcam-based
-controller then uses it right away.
+create a game or other experience where you train your own webcam-based
+controller use it right away.
 
-We've made this demo incredibly simple, where you just train two classes ("yes" and "no")
-using your webcam. But 
+We've made this demo incredibly simple, where you just train two classes ("yes" and "no").
+But you can remix this project by editing `script.js` to do what you want – add classes, change
+labels, triggers, etc.
 
 
 ## Step 1: Create wizard.
