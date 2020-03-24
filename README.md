@@ -2,17 +2,21 @@
 
 This is a *Teachablemachine.js* demo that shows how you can drop a “training wizard” on
 top of your web creation with just a few lines of code. For example, you can
-create a game or other experience where the user trains their own webcam-based
+create a game or other experience where  trains their own webcam-based
 controller then uses it right away.
 
+We've made this demo incredibly simple, where you just train two classes ("yes" and "no")
+using your webcam. But 
 
-## Step 1: Create wizard via ImageWizard() 
-The first step is to create a new `ImageWizard` object containing all the configurations
-and callbacks. This object contains your `classes` array for your classes.
+
+## Step 1: Create wizard.
+First, create your "training wizard" by making a new `ImageWizard` object. This is where you'll define
+your classes, instructions for the user, and callbacks.
 
 ```js
 
 const wizard = new tm.Wizard({
+  // Define your classes here
   classes: [
     {
       name: "Yes",
@@ -30,6 +34,7 @@ const wizard = new tm.Wizard({
   onLoad: () => {
     console.log("model has loaded");
   },
+  // Callback for when the "inference camera" is running
   onPrediction: predictions => {
     predictions.sort((a, b) => (a.probability > b.probability ? -1 : 1));
     predictionEl.innerHTML = predictions[0].className;
@@ -51,8 +56,8 @@ document.body.appendChild(wizard.buttonElement);
 ```
 
 
-## Step 2: Create camera via createInferenceCamera();
-Then, create your camera for running inference.
+## Step 2: Create camera.
+Then, create your "inference camera" for running inference via `createInferenceCamera`.
 
 
 ```js
