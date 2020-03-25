@@ -1,23 +1,32 @@
 # Hello Wizard
 
-This is a *Teachablemachine.js* demo that shows how you can drop a “training wizard” on
-top of your web creation with just a few lines of code. For example, you can
+Let's say you're trying to make a web creation that uses machine learning. For example,
+maybe you're trying to make a game where you can train your own webcam-based controller.
+Normally, this would be a lot of code.
+
+But that's what this new *Teachablemachine.js* library is for. One of the things it lets
+you do is drop a “training wizard” on top of your web creation with just a few lines of code.
+It's one of the fastest ways to bring machine learning to your web creation.
+
+Click `In the demo, you'll train two classes "yes" and "no" using whatever you want. For example,
+"yes" could be when your hand is up, or holding an object. "No" could be when you're hand is not up,
+or you don't have that object.
+
 create a game or other experience where you train your own webcam-based
-controller use it right away.
+controller and use it right away.
 
-We've made this demo incredibly simple, where you just train two classes ("yes" and "no").
-But you can remix this project by editing `script.js` to do what you want – add classes, change
-labels, triggers, etc.
+And of course you can remix this project by just editing
+`script.js` to do what you want – add classes, change labels, triggers, and so on.
 
 
-## Step 1: Create wizard.
+## Step 1: Create training wizard.
 First, create your "training wizard" by making a new `ImageWizard` object. This is where you'll define
 your classes, instructions for the user, and callbacks.
 
 ```js
 
-const wizard = new tm.Wizard({
-  // Define your classes here
+const myWizard = new tm.Wizard({
+  // Define your classes
   classes: [
     {
       name: "Yes",
@@ -53,15 +62,15 @@ const wizard = new tm.Wizard({
 Then, append your wizard into the page to make it show up.
 
 ```js
-document.body.appendChild(wizard.buttonElement);
+document.body.appendChild(myWizard.buttonElement);
 ```
 
 
 ## Step 2: Create camera.
-Then, create your "inference camera" for running inference via `createInferenceCamera`.
+Then, create your camera which will recognize what the user does via `createInferenceCamera`.
 
 
 ```js
-const inferenceCamera = wizard.createInferenceCamera();
+const myCamera = myWizard.createInferenceCamera();
 document.body.appendChild(inferenceCamera);
 ```
