@@ -73,11 +73,11 @@ document.body.appendChild(inferenceCamera);
 
 ## Remix this project!
 
-Of course, you can remix this project by just editing
-`script.js` to do what you want – add classes, change labels, triggers, and so on.
+Of course, you can remix this project by just editing `script.js.` For example:
+- *Change classes*: How many, names of classes, and so on.
+- *Change what happens*: Change what happens when each class is recognized. Make it show something,
+say something, or even connect it to something you're building – a game, etc.
 
-(NOTE TO SELVES TO DO: let's add ideas for what developers could do)
+## What's next?
 
-## Check out components demo too
-
-(NOTE TO SELVES - let's work on the other one)
+Want to dig in deeper? [Check out Demo #2 here.](https://glitch.com/edit/#!/second-satin-surf?path=README.md)
