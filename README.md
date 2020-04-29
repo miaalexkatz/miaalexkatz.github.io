@@ -25,16 +25,16 @@ const myWizard = new tm.Wizard({
   // Define your classes
   classes: [
     {
-      name: "Yes",
-      title: "“Yes” examples.",
+      name: "Hand Up",
+      title: "Record "Hand Up” examples.",
       description:
-        "Add examples of what you want to trigger your “yes” state. This can be anything you want, like holding up your hand or an object."
+        "Add examples of what you want to trigger your “Hand Up” state. This can be anything you want, like holding up your hand or an object."
     },
     {
-      name: "No",
-      title: "“No” examples.",
+      name: "Hand Down",
+      title: "Record “Hand Down” examples.",
       description:
-        "Add examples of what you want to trigger your “no” state. For example, without your hand or object."
+        "Add examples of what you want to trigger your “Hand Down” state. For example, without your hand or object."
     }
   ],
   onLoad: () => {
