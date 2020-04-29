@@ -1,15 +1,18 @@
-### teachablemachine.js Demo #1:
-# Hello Wizard
+### teachablemachine.js
+# Demo #1: Hello Wizard
 
 Let's say you want to bring machine learning into your web creation. For example, maybe you've made a
-game and want to let users train their own webcam-based controller, or a new musical instrument that
-reacts to your hands. Normally, this would be a lot of code, but the teachablemachine.js library allows 
+game and want to let users train their own webcam-based controller, or a virtual musical instrument that
+reacts to their hands. Normally, this would be a lot of code, but the *teachablemachine.js* library allows 
 you to implement it quickly. 
 
-For example, one of the things it lets you do is drop a “training wizard” on top of your web creation with
+One of the things it lets you do is drop a “training wizard” on top of your web creation with
 just a few lines of code. This wizard will walk your users through training their machine learning model.
 
-Click Show to try out the demo. You'll use your webcam in the "training wizard" to train two classes "yes" 
+Click Show to try out the demo. You'll use your webcam in the "training wizard" to train two classes "yes"
+and "no" with whatever you want - e.g. holding your hand or an object up/down. Then click Train and a
+machine learning model will be created locally in your browser (your images stay private to you and are
+not sent to any server).
 
 ## Step 1: Create wizard for training.
 First, create your "training wizard" by making a new `ImageWizard` object. This is where you'll define
