@@ -10,21 +10,14 @@
     <script src="/script.js" defer></script>
   </head>
   <body>
+    <h1>
+      TeachableMachine.js Example: Hand Up/ Down
+    </h1>
     <p id="intro-copy" class="copy">
-      Teach your machine to recognize anything as a <strong>“yes/no”</strong> -
-      your hand/object/ etc – using your webcam.<br />
-      Click to begin and allow access to your camera.<br />
-
-      <small id="privacy-note"
-        >(Images are private and not sent to the&nbsp;server.)</small
-      >
+      This demo shows how you can bring machine learning to your web creation with just a few lines of code. Here, you'll teach a character to raise its hand when you do.
+      Remix it to make your own project.
     </p>
-
-    <p id="confirmation-copy" class="copy hidden">
-      Now try it out. Show it your <strong>“yes/no”</strong> states and you
-      should see the text change.<br />Click “teach” to retrain it.
-      <span id="prediction"></span>
-    </p>
+    <img src="https://cdn.glitch.com/28df51be-a811-4347-84fb-0ff887a9aade%2Fteachable-01.png?v=1588268341854" alt="User waving their hand paired with a gif of a character raising their hand"/>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
     <script
       src="/teachablemachine-components.min.js"
