@@ -28,6 +28,17 @@ h1 {
   font-size: 24px;
 }
 
+#images {
+  width: 850px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#images img {
+  width: 850px;
+  height: auto;
+}
+
         /*.copy {
             width: 250px;
             text-align: center;

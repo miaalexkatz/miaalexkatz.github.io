@@ -6,6 +6,8 @@ console.log("hi");
 
 const $ = document.querySelector.bind(document);
 
+const images = document.querySelectorAll('#images img');
+
 const predictionEl = $("#prediction");
 
 const wizard = new tm.Wizard({
@@ -27,8 +29,13 @@ const wizard = new tm.Wizard({
     console.log("model has loaded");
   },
   onPrediction: predictions => {
-    predictions.sort((a, b) => (a.probability > b.probability ? -1 : 1));
-    predictionEl.innerHTML = predictions[0].className;
+    images[0].classList.add('hidden');
+    if (predictions[0].propability > predictions[1].probability) {
+      images[1].classList.remvoe('hidden');
+      images[0]
+    }
+    //predictions.sort((a, b) => (a.probability > b.probability ? -1 : 1));
+    //predictionEl.innerHTML = predictions[0].className;
   },
   onSampleAdded: added => {
     console.log(added);
