@@ -1,15 +1,33 @@
         body {
-            background-color: #eeeeee;
-            color: #434343;
-            font-family: Helvetica, sans-serif;
-            font-size: 18px;
+            background-color: #ffffff;
+            color: #999999;
+            font-family: 'Poppins', Helvetica, sans-serif;
+            text-align: center;
+            font-weight: 300;
         }
 
         .hidden {
             display: none;
         }
 
-        .copy {
+#intro {
+  max-width: 877px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 24px;
+  color: black;
+  font-weight: 700;
+}
+#intro h1 {
+  margin-bottom: 0px;
+}
+#intro p {
+  margin-top: 3px;
+  font-size: 24px;
+}
+
+        /*.copy {
             width: 250px;
             text-align: center;
             position: absolute;
@@ -18,7 +36,7 @@
             transform: translate(-50%, -50%);
             font-weight: lighter;
             line-height: 1.3em;
-        }
+        }*/
         #privacy-note {
             display: block;
             padding-top: 30px;
