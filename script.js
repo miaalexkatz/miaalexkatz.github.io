@@ -10,6 +10,10 @@ const $ = document.querySelector.bind(document);
 const predictionEl = $("#prediction");
 
 const wizard = new tm.Wizard({
+  introduction: {
+    title: tm.html`Let's teach your computer to recognize if your hand is up or down.`,
+    description: tm.html`Click "Start", You'll need to allow access to your webcam. Note that your images stay private to you and do not leave your computer.`
+  },
   classes: [
     {
       name: "Yes",
