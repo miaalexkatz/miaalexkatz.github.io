@@ -56,6 +56,7 @@ const wizard = new tm.Wizard({
   }
 });
 
+$('#train-model-button').addEventListener('click', () => wizard.open());
 // document.body.appendChild(wizard.domElement);
 //document.body.appendChild(wizard.buttonElement);
 

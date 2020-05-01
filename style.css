@@ -56,9 +56,7 @@ h1 {
 
 #images.flex-section {
   width: 640px;
-  /*height: 360px;
-  flex-shrink: unset;
-  flex-grow: unset;*/
+  height: 360px;
   overflow: hidden;
   margin: 0 auto;
 }
