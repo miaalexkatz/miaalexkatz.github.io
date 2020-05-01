@@ -63,6 +63,9 @@ h1 {
   overflow: hidden;
   margin: 0 auto;
 }
+#intro-image {
+  width: 600px;
+}
 
 #buttons {
   display: flex;
