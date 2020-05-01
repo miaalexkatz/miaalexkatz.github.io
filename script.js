@@ -49,7 +49,9 @@ const wizard = new tm.Wizard({
   },
   onTrain: () => console.log("train begins"),
   onTrainComplete: () => {
-    const inferenceCamera = wizard.createInferenceCamera();
+    const inferenceCamera = wizard.createInferenceCamera({
+      size: 270
+    });
     document.body.appendChild(inferenceCamera);
   }
 });
