@@ -1,13 +1,26 @@
 body {
-    background-color: #ffffff;
-    color: #999999;
-    font-family: 'Poppins', Helvetica, sans-serif;
-    text-align: center;
-    font-weight: 300;
+  background-color: #ffffff;
+  color: #999999;
+  font-family: 'Poppins', Helvetica, sans-serif;
+  text-align: center;
+  font-weight: 300;
+  margin: 0;
 }
 
 .hidden {
-    display: none;
+  display: none;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.flex-section {
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-items: center;
+  align-items: center;
 }
 
 #train-model-button {
@@ -37,17 +50,20 @@ h1 {
   font-size: 24px;
 }
 
-#images {
-  width: 850px;
+#images.flex-section {
+  width: 640px;
+  height: 360px;
+  flex-shrink: unset;
+  flex-grow: unset;
   height: auto;
   overflow: hidden;
   margin: 0 auto;
 }
-
+/*
 #images img {
   width: 850px;
   height: auto;
-}
+}*/
 
 
 

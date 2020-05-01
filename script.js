@@ -57,7 +57,7 @@ const wizard = new tm.Wizard({
 });
 
 // document.body.appendChild(wizard.domElement);
-document.body.appendChild(wizard.buttonElement);
+//document.body.appendChild(wizard.buttonElement);
 
 // console.log('@teachablemachine/api wizard: ' ,new tm.Wizard());
 // console.log('yeae boi');
