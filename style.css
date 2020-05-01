@@ -15,18 +15,22 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  /*justify-items: center;*/
+  align-items: center;
+  justify-content: center; /*space-evenly;*/
 }
-.flex-section {
+/*.flex-section {
   flex-grow: 1;
-  flex-shrink: 1;
   justify-items: center;
   align-items: center;
-}
-
+}*/
 #train-model-button {
   width: 200px;
   --background-color: #1A73E8;
   --color: #ffffff;
+}
+#train-model-button:hover {
+  --color: #1A73E8;
 }
 
 #intro {
@@ -52,13 +56,20 @@ h1 {
 
 #images.flex-section {
   width: 640px;
-  height: 360px;
+  /*height: 360px;
   flex-shrink: unset;
-  flex-grow: unset;
-  height: auto;
+  flex-grow: unset;*/
   overflow: hidden;
   margin: 0 auto;
 }
+
+#buttons {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  min-height: 100px;
+}
+
 /*
 #images img {
   width: 850px;
