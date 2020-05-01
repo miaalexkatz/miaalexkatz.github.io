@@ -4,10 +4,9 @@
 // prints "hi" in the browser's dev tools console
 console.log("hi");
 
-const $ = document.querySelector.bind(document);
+const qS = document.querySelector.bind(document);
 
-
-const predictionEl = $("#prediction");
+const mainEl = qs()
 
 const wizard = new tm.Wizard({
   introduction: {

@@ -55,8 +55,11 @@ h1 {
 }
 
 #images.flex-section {
-  width: 640px;
-  height: 360px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  /*width: 640px;*/
+  height: 420px;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -74,9 +77,38 @@ h1 {
   height: auto;
 }*/
 
+#prediction-section {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
 
+.ready #prediction-section {
+  display: flex;
+}
 
-tm-croppable-webcam {
+#inference-camera-container {
+  width: 270px;
+  height: 270px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  margin-right: 28px;
+}
+
+.prediction-image {
+  width: 406px;
+  height: 270px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  margin-left: 28px;
+}
+
+.ready #intro-image {
+  display: none;
+}
+
+/*tm-croppable-webcam {
     width: 270px;
     height: 270px;
     position: fixed;
@@ -84,4 +116,4 @@ tm-croppable-webcam {
     top: calc(100vh - 230px);
     transform: translate(-50%, -50%);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
-}
+}*/
