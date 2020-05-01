@@ -1,12 +1,6 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
+/* global tm */
 
-// prints "hi" in the browser's dev tools console
-console.log("hi");
-
-const qS = document.querySelector.bind(document);
-
-const mainEl = qs()
+const mainEl = document.querySelector('#container');
 
 const wizard = new tm.Wizard({
   introduction: {
@@ -31,15 +25,22 @@ const wizard = new tm.Wizard({
     console.log("model has loaded");
   },
   onPrediction: predictions => {
-    const images = document.querySelectorAll('#images img');
-    images[0].classList.add('hidden');
-    if (predictions[0].probability > predictions[1].probability) {
-      images[1].classList.remove('hidden');
-      images[2].classList.add('hidden');
-    } else {
-      images[1].classList.add('hidden');
-      images[2].classList.remove('hidden');
-    }
+    const images = document.querySelectorAll('.prediction-image');
+    let highestProb = Number.MIN_VALUE;
+    let highestIndex = -1;
+    predictions.forEach((pred, i) => {
+      if (pred.probability > highestProb) {
+        highestProb = pred.probability;
+        highestIndex = i;
+      }
+    });
+    images.forEach((img, i) => {
+      if (i === highestIndex) {
+        img.classList.remove('hidden');
+      } else {
+        img.classList.add('hidden');
+      }
+    });
     //predictions.sort((a, b) => (a.probability > b.probability ? -1 : 1));
     //predictionEl.innerHTML = predictions[0].className;
   },
@@ -47,17 +48,14 @@ const wizard = new tm.Wizard({
     console.log(added);
   },
   onTrain: () => console.log("train begins"),
-  onTrainComplete: () => {
+  onReady: () => {
     const inferenceCamera = wizard.createInferenceCamera({
       size: 270
     });
-    document.body.appendChild(inferenceCamera);
+    const cameraContainer = document.querySelector('#inference-camera-container');
+    cameraContainer.appendChild(inferenceCamera);
+    mainEl.classList.add('ready');
   }
 });
 
-$('#train-model-button').addEventListener('click', () => wizard.open());
-// document.body.appendChild(wizard.domElement);
-//document.body.appendChild(wizard.buttonElement);
-
-// console.log('@teachablemachine/api wizard: ' ,new tm.Wizard());
-// console.log('yeae boi');
+document.querySelector('#train-model-button').addEventListener('click', () => wizard.open());
