@@ -16,7 +16,7 @@ const wizard = new tm.Wizard({
     },
     {
       name: "Hand down",
-      title: "“Record examples with your hand down.",
+      title: "Record examples with your hand down.",
       description:
         "Take at least 20 pictures of your hand down. Make sure that your hand is out of frame for every example."
     }
