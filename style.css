@@ -4,7 +4,7 @@ body {
   font-family: 'Poppins', Helvetica, sans-serif;
   text-align: center;
   font-weight: 300;
-  margin: 0;
+  margin: 4px;
 }
 
 .hidden {
@@ -117,9 +117,15 @@ h1 {
   and (min-device-width : 375px)
   and (max-device-width : 812px)
   and (orientation : portrait) {
-                      #prediction-section {
-                        flex-direction: column;
-                      }   
+    #inference-camera-container {
+      wiidth: 135px;
+      height: 135px;
+      display: none;
+    }
+    #prediction-image {
+      width: calc(100vw - 32px);
+      height: 135px;
+    }
                       
 }
 
