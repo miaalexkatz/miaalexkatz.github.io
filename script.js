@@ -41,8 +41,6 @@ const wizard = new tm.Wizard({
         img.classList.add('hidden');
       }
     });
-    //predictions.sort((a, b) => (a.probability > b.probability ? -1 : 1));
-    //predictionEl.innerHTML = predictions[0].className;
   },
   onSampleAdded: added => {
     console.log(added);
