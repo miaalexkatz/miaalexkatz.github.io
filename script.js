@@ -4,21 +4,21 @@ const mainEl = document.querySelector('#container');
 
 const wizard = new tm.Wizard({
   introduction: {
-    title: tm.html`Let’s teach your computer to recognize if your hand is up or down.`,
+    title: tm.html`Let’s play some Peekaboo!.`,
     description: tm.html`Click "Start", You'll need to allow access to your webcam. Note that your images stay private to you and do not leave your computer.`
   },
   classes: [
     {
-      name: "Hand up",
-      title: "“Record examples with your hand up.",
+      name: "Where are you?",
+      title: "“Record examples with your hands covering your face.",
       description:
-        "Hold the button and take at least 20 pictures with your hand up. Make sure that your hand is in frame for every example."
+        "Hold the button and take at least 20 pictures with your face covered by your hands. Stay in frame!"
     },
     {
-      name: "Hand down",
-      title: "Record examples with your hand down.",
+      name: "Peekaboo!n",
+      title: "Record examples with hands removed from your face",
       description:
-        "Take at least 20 pictures of your hand down. Make sure that your hand is out of frame for every example."
+        "Take at least 20 pictures with your hands removed. Stay in frame!"
     }
   ],
   onLoad: () => {
