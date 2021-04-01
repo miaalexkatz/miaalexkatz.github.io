@@ -5,7 +5,7 @@ const mainEl = document.querySelector('#container');
 const wizard = new tm.Wizard({
   introduction: {
     title: tm.html`Let’s play some Peekaboo!.`,
-    description: tm.html`Click "Start", You'll need to allow access to your webcam. Note that your images stay private to you and do not leave your computer.`
+    description: tm.html`Click "Start" and accept webcam permissions!.`
   },
   classes: [
     {
