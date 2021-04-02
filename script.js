@@ -15,7 +15,7 @@ const wizard = new tm.Wizard({
         "Hold the button and take at least 20 pictures with your face covered by your hands. Stay in frame!"
     },
     {
-      name: "Peekaboo!n",
+      name: "Peekaboo!",
       title: "Record examples with hands removed from your face",
       description:
         "Take at least 20 pictures with your hands removed. Stay in frame!"
