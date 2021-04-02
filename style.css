@@ -1,6 +1,6 @@
 body {
-  background-color: #ffffff;
-  color: #999999;
+  background-image: url("https://cdn.glitch.com/fffd5683-d11f-433f-8c60-3a29f832f634%2Fbluepolkadot.jpg?v=1617321810322");
+  color: slategray;
   font-family: 'Poppins', Helvetica, sans-serif;
   text-align: center;
   font-weight: 300;
@@ -26,11 +26,12 @@ body {
 }*/
 #train-model-button {
   width: 200px;
-  --background-color: #1A73E8;
-  --color: #ffffff;
+  --background-color: midnightblue;
+  --color: snow;
+  
 }
 #train-model-button:hover {
-  --color: #1A73E8;
+  --color: steelblue;
 }
 
 #intro {
@@ -39,8 +40,8 @@ body {
 }
 
 h1 {
-  font-size: 24px;
-  color: black;
+  font-size: 30px;
+  color: midnightblue;
   font-weight: 700;
 }
 
@@ -105,7 +106,7 @@ h1 {
   width: 406px;
   height: 270px;
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 1px solid midnightblue;
   margin-left: 28px;
 }
 
