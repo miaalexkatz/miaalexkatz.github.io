@@ -1,3 +1,13 @@
+
+
+# Hello!
+
+I did not make a significant portion of this project. 
+The Glitch template itself is derived from the link we used in class, and Teachable Machine is obviously not my own.
+However, the css edits and text customization are my own!
+
+mia
+
 ### teachablemachine.js
 # Demo #1: Hello Wizard
 
