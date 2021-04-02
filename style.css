@@ -28,6 +28,7 @@ body {
   width: 200px;
   --background-color: midnightblue;
   --color: snow;
+  border-radius:20px;
   
 }
 #train-model-button:hover {
@@ -37,6 +38,19 @@ body {
 #intro {
   max-width: 877px;
   margin: 0 auto;
+}
+
+@keyframes imagetest{
+  from{border-color:midnightblue;}
+  to{border-color:snow};
+}
+
+img{
+  border-style-side: groove;
+  border-width: 20px;
+  animation-name: imagetest;
+  animation-duration:6s;
+  animation-iteration-count: infinite;
 }
 
 h1 {
